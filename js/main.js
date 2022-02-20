@@ -16,7 +16,7 @@ function easyBtnClick() {
     return data;
   }
   const currentWord = document.querySelector('#current-word');
-  currentWord.innerHTML = getWords();
+  currentWord = getWords();
 
 }
 
