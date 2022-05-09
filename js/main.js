@@ -88,6 +88,7 @@ function showWord(words) {
     .then(data => {
       const randomIndex = Math.floor(Math.random() * data.length);
       currentWord.innerHTML = data[randomIndex];
+      
     });
 }
 
