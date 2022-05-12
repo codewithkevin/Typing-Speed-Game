@@ -6,7 +6,7 @@ window.addEventListener('load', init);
 const levels = {
   easy: 10,
   medium: 7,
-  hard: 5
+  hard: 4
 };
 
 // To change level
@@ -88,7 +88,6 @@ function showWord(words) {
     .then(data => {
       const randomIndex = Math.floor(Math.random() * data.length);
       currentWord.innerHTML = data[randomIndex];
-      
     });
 }
 
