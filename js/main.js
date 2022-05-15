@@ -1,5 +1,6 @@
 
-prompt("saysomething")
+// prompt("saysomething")
+
 
 
 window.addEventListener('load', init);
