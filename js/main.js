@@ -1,10 +1,14 @@
+
+prompt("saysomething")
+
+
 window.addEventListener('load', init);
 
 // Globals
 
 // Available Levels
 const levels = {
-  easy: 13,
+  easy: 10,
   medium: 8,
   hard: 5
 };
