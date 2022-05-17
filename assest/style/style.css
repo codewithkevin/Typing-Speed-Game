@@ -4,3 +4,29 @@ body {
     background-color: white;
   }
   
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
