@@ -1,5 +1,5 @@
 
-var saysomething = prompt("Enter your level: easy, medium, or hard");
+var saysomething = prompt("Enter your level: easy, medium");
 
 function test() {
 
