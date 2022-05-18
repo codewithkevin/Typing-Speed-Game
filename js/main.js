@@ -122,7 +122,7 @@ function easy() {
 }
 
 //Medium Fuction
-function test() {
+function meduim() {
 
   window.addEventListener('load', init);
 
