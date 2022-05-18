@@ -1,43 +1,70 @@
-body {
-	font-family: "Open Sans", sans-serif;
-	  color: #272829;
-    background-color: white;
-  }
-  
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.navbar a {
-  text-decoration: none;
-  color: dodgerblue;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #575ca1;
+    padding: 10px;
+    font-size: 20px;
+    color: #151515;
 }
-
-.logo {
-  margin-right: 50px;
+/* ======================== */
+.container{
+    max-width: 960px; /*Limits the width of the container but let's it get smaller if needed.*/
+    margin: 0 auto; /*Center the container horizontally in the middle of the page.*/
+    padding: 12px;
 }
-
-.list {
-  list-style: none;
-  display: flex;
+.navbar{
+    display: flex;
+    flex-wrap: wrap; /*Allows the children inside a flex container to wrap down onto the next line if there is not enough space.*/
+    align-items: center; /*Centers the children of a flex container vertically.*/
+    justify-content: space-between; /*Adds space between each child of a flex container.*/
+    background-color: #fff;
+    padding-block: 15px; /*Padding top and bottom*/
 }
-
-@media screen and (max-width: 600px) {
-
-  .menu {
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-  }
-  
-  .list{
-    flex-direction: column;
-    align-items: center;
-    
-  }
+.navbar a{
+    text-decoration: none;
+    color: inherit; /*Inherits the same color as the parent element or grandparent (the body) unless you set the color to the navbar.*/
+}
+.logo{
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px; /*Applies right and bottom spacing between children inside a flex or grid container.*/
+}
+#toggler,
+.navbar label{
+    display: none;/*Hide the checkbox and label on large screens.*/
+}
+/*Breakpoint set at 600px, once it is 600px or smaller the layout changes to use the following styles overriding the old ones.*/
+@media screen and 
+(max-width: 600px){
+    .menu{
+        width: 100%;
+        max-height: 0; /*Makes the max-height 0 to side the expanded menu.*/
+        overflow: hidden; /*Hides the overflowing content.*/
+    }
+    .list{
+        flex-direction: column; /*Chances the direction of the flex container. By default it is a row so we change it to column in small screens.*/
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex; /*Makes it an inline flex container for the icon. Used for centering the icon inside this box.*/
+        align-items: center;
+        cursor: pointer;
+    }
+    /* 
+        The general sibling selector (~) selects all elements that are next siblings of #toggler.
+        In this case we target the .menu and we turn the height back to 100% to show the menu.
+    */
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
 }
