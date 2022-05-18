@@ -37,7 +37,7 @@ body{
 .list{
     list-style: none;
     display: flex;
-    gap: 25px; /*Applies right and bottom spacing between children inside a flex or grid container.*/
+    gap: 25px;
 }
 #toggler,
 .navbar label{

@@ -245,4 +245,5 @@ easy();
 
 //Event Listeners
 easyBtn.addEventListener('click', easy);
+mediumBtn.addEventListener('click', meduim);
 
