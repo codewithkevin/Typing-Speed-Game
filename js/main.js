@@ -130,7 +130,7 @@ function meduim() {
 
   // Available Levels
   const levels = {
-    easy: 10
+    meduim: 5
   };
 
   // To change level
@@ -243,8 +243,6 @@ function meduim() {
 //Default call
 easy();
 
-if(saysomething === "easy") {
-  test();
-}
-
+//Event Listeners
+easyBtn.addEventListener('click', easy);
 
