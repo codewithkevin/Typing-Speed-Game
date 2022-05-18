@@ -241,7 +241,7 @@ function meduim() {
 
 
 //Default call
-test();
+easy();
 
 if(saysomething === "easy") {
   test();
