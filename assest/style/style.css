@@ -27,6 +27,17 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
   
+  .list{
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
