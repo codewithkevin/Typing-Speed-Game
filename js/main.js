@@ -5,6 +5,7 @@ const hardBtn = document.querySelector('#hardBtn');
 
 
 // Event Listeners
+easyBtn.addEventListener('click', easy);
 
 
 
