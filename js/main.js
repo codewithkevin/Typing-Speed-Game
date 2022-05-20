@@ -11,6 +11,12 @@ function easyBtnClick() {
 
   //DOM Selectors
   const currentWord = document.querySelector('#current-word');
+  const wordInput = document.querySelector('#word-input');
+  const scoreDisplay = document.querySelector('#score');
+  const timeDisplay = document.querySelector('#time');
+  const message = document.querySelector('#message');
+  const seconds = document.querySelector('#seconds');
+  const highscoreDisplay = document.querySelector('#highscore');
 
   const words = "https://random-word-api.herokuapp.com/word?number=100";
 
@@ -18,6 +24,8 @@ function easyBtnClick() {
     const response = await fetch(words);
     const data = await response.json();
     currentWord.innerHTML = data[0];
+
+    // Initialize Game
   }
   getWords();
   
