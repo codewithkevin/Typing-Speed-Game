@@ -8,12 +8,15 @@ const hardBtn = document.querySelector('#hardBtn');
 easyBtn.addEventListener('click', easyBtnClick);
 
 function easyBtnClick() {
+
+  //DOM Selectors
+  const currentWord = document.querySelector('#current-word');
+
   const words = "https://random-word-api.herokuapp.com/word?number=100";
 
   async function getWords() {
     const response = await fetch(words);
     const data = await response.json();
-    const currentWord = document.querySelector('#current-word');
     currentWord.innerHTML = data[0];
   }
   getWords();
