@@ -5,9 +5,15 @@ const hardBtn = document.querySelector('#hardBtn');
 
 
 // Event Listeners
-easyBtn.addEventListener('click', easy);
+easyBtn.addEventListener('click', easyBtnClick);
 
+function easyBtnClick() {
+  const level = {
+    easy: 10
+  }
 
+  const currentLevel = level.easy;
+}
 
 
 //Medium Fuction
