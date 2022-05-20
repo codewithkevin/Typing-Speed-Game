@@ -3,6 +3,12 @@ const easyBtn = document.querySelector('#easyBtn');
 const mediumBtn = document.querySelector('#mediumBtn');
 const hardBtn = document.querySelector('#hardBtn');
 
+
+// Event Listeners
+
+
+
+
 //Medium Fuction
 function easy() {
 
