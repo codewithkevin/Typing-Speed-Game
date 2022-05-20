@@ -8,11 +8,12 @@ const hardBtn = document.querySelector('#hardBtn');
 easyBtn.addEventListener('click', easyBtnClick);
 
 function easyBtnClick() {
-  const level = {
-    easy: 10
-  }
+  
+  const easy = 10;
 
-  const currentLevel = level.easy;
+  const currentLevel = easy;
+
+  
 }
 
 
