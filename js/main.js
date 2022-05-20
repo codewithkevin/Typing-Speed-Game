@@ -13,10 +13,11 @@ function easyBtnClick() {
   async function getWords() {
     const response = await fetch(words);
     const data = await response.json();
-    return data;
+    const currentWord = document.querySelector('#current-word');
+    currentWord.innerHTML = data[0];
   }
-  const currentWord = document.querySelector('#current-word');
-  currentWord = getWords();
+  getWords();
+  
 
 }
 
