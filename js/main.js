@@ -1,7 +1,7 @@
-//Selectors For Difficult Level
-// const easyBtn = document.querySelector('#easyBtn');
-// const mediumBtn = document.querySelector('#mediumBtn');
-// const hardBtn = document.querySelector('#hardBtn');
+// Selectors For Difficult Level
+const easyBtn = document.querySelector('#easyBtn');
+const mediumBtn = document.querySelector('#mediumBtn');
+const hardBtn = document.querySelector('#hardBtn');
 
 //Medium Fuction
 function easy() {
