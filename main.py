@@ -6,6 +6,5 @@ call = names[-1]
 add = names+["Lord is God"]
 delting = len(names)
 pop = names.pop(0)
-insert = names.insert
 
 
