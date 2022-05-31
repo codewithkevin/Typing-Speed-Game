@@ -37,4 +37,10 @@ function easyBtnClick() {
     word = word.toUpperCase();
     currentWord.innerHTML = word;
   });
+
+  //Initialize game
+  seconds.innerHTML = currentLevel;
+  scoreDisplay.innerHTML = score;
+  timeDisplay.innerHTML = time;
+  message.innerHTML = "";
 }
