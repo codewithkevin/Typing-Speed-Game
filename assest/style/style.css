@@ -8,17 +8,17 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #575ca1;
+    background-color: black;
     padding: 10px;
     font-size: 20px;
-    color: #151515;
+    color: white;
 }
 /* ======================== */
 .container{
     max-width: 960px; /*Limits the width of the container but let's it get smaller if needed.*/
     margin: 0 auto; /*Center the container horizontally in the middle of the page.*/
     padding: 12px;
-    color: black;
+    color: white;
 }
 .navbar{
     display: flex;
@@ -27,6 +27,7 @@ body{
     justify-content: space-between; /*Adds space between each child of a flex container.*/
     background-color: #fff;
     padding-block: 15px; /*Padding top and bottom*/
+    color: black;
 }
 .navbar a{
     text-decoration: none;
