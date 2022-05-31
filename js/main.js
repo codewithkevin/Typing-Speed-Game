@@ -127,3 +127,6 @@ function easyBtnClick() {
   startMatch();
   
 }
+
+//default level
+easyBtnClick();
