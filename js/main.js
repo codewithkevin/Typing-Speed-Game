@@ -12,6 +12,8 @@ const highscoreDisplay = document.querySelector('#highscore');
 
 //Event listeners
 easyBtn.addEventListener('click', easyBtnClick);
+mediumBtn.addEventListener('click', mediumBtnClick);
+hardBtn.addEventListener('click', hardBtnClick);
 
 //Function listeners
 function easyBtnClick() {
