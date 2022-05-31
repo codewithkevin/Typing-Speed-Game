@@ -10,13 +10,7 @@ const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 const highscoreDisplay = document.querySelector('#highscore');
 
-
-// Event Listeners
-
-
-
-
-
-
-
-
+//Event listeners
+easyBtn.addEventListener('click', function(){
+  alert('Easy mode selected');
+});
