@@ -11,6 +11,22 @@ const seconds = document.querySelector('#seconds');
 const highscoreDisplay = document.querySelector('#highscore');
 
 //Event listeners
-easyBtn.addEventListener('click', function(){
-  alert('Easy mode selected');
-});
+easyBtn.addEventListener('click', easyBtnClick);
+
+//Function listeners
+function easyBtnClick() {
+
+   //Available Levels 
+   const levels = {
+      easy: 10,
+   };
+
+   //To change level
+   const currentLevel = levels.easy;
+
+  let time = currentLevel;
+  let score = 0;
+  let isPlaying = true;
+
+  //Get random word from array
+}
