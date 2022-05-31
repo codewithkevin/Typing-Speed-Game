@@ -56,6 +56,39 @@ function easyBtnClick() {
      wordInput.value = '';
      score++;
    }
+  
+
+  
+
+    //HIGHSCORE
+    if(typeof sessionStorage['highscore'] == 'undefined' || score > sessionStorage['highscore']){
+      sessionStorage['highscore'] = score;
+    }
+    else{
+      sessionStorage['highscore'] = sessionStorage['highscore'];
+    }
+
+    //Prevent displaying highscore if no score is present
+    if(sessionStorage['highscore'] >= 0){
+      highscoreDisplay.innerHTML = sessionStorage['highscore'];
+    }
+
+    //iF SCORE is -1, display 0
+    if(score === -1){
+      scoreDisplay.innerHTML = 0;
+    } else {
+      scoreDisplay.innerHTML = score;
+    }
+  }
+
+  function matchWords(){
+    if(wordInput.value === currentWord.innerHTML){
+      message.innerHTML = 'Correct!';
+      return true;
+    } else {
+      message.innerHTML = '';
+      return false;
+    }
   }
 
   //SHow word
@@ -68,15 +101,8 @@ function easyBtnClick() {
     });
   }
 
-  //HIGHSCORE
-  if(typeof sessionStorage['highscore'] == 'undefined' || score > sessionStorage['highscore']){
-    sessionStorage['highscore'] = score;
-  }
-  else{
-    sessionStorage['highscore'] = sessionStorage['highscore'];
-  }
-
 
   init();
+  startMatch();
   
 }
