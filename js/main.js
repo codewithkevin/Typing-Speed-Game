@@ -29,4 +29,12 @@ function easyBtnClick() {
   let isPlaying = true;
 
   //Get random word from array
+  const words = "https://random-word-api.herokuapp.com/word?number=100"
+  fetch(words)
+  .then(response => response.json())
+  .then(data => {
+    let word = data[Math.floor(Math.random() * data.length)];
+    word = word.toUpperCase();
+    currentWord.innerHTML = word;
+  });
 }
