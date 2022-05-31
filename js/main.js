@@ -11,7 +11,8 @@ const seconds = document.querySelector('#seconds');
 const highscoreDisplay = document.querySelector('#highscore');
 
 
-//
+// Event Listeners
+
 
 
 
