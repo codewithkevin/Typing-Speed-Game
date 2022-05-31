@@ -112,7 +112,6 @@ function easyBtnClick() {
     } else if(time === 0){
       //Game over
       isPlaying = false;
-      message.innerHTML = 'Game Over!';
     }
     //Show time
     timeDisplay.innerHTML = time;
