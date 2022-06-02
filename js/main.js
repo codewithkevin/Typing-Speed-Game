@@ -360,6 +360,7 @@ function hardBtnClick() {
  startMatch();
  
 }
+
 //default level
 easyBtnClick();
 
